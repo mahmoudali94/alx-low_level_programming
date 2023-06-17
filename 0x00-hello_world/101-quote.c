@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - entry point to print "Programming is like..
- * Return: 1 if exited properly, non-zero otherwise
+ * main - entry point to print
+ * Return : 1
  */
 int main(void)
 {
