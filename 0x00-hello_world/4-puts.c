@@ -1,10 +1,11 @@
-#include<stdio.h>
-/* Print using puts function
- * main function is the entry point
+#include <stdio.h>
+
+/**
+ * main is the entry point to  print the phrase "Programming is like building a multilingual puzzle
+ * Return: 0 if exited properly, non-zero otherwise
  */
 int main(void)
 {
-	/*Print string */
-	puts("\"Programming is like building a multilingual puzzle ");
+	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
 }
