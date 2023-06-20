@@ -1,7 +1,7 @@
 #include "main.h"
-/*
- * main - Print _Putcher to termenal
- * return alaways 0
+/**
+ * main -  prints _putchar, followed by a new line
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -15,5 +15,5 @@ int main(void)
 	_putchar('r');
 	_putchar('\n');
 
-	return (0); 
+	return (0);
 }
