@@ -1,18 +1,25 @@
 #include "main.h"
+
 /**
- * print_alphabet -  prints a to z, followed by a new line
- * Return: Always 0 (Success)
+ * print_last_digit - prints the last digit of a number
+ * @n: the int to extract the last digit from
+ * Return: value of the last digit
  */
-void print_alphabet(void)
+int print_last_digit(int n)
 {
-	char c = 'a';
+	int a;
 
-	while (c <= 'z')
+	if (n < 0)
 	{
-		_putchar(c);
-		c++;
-
+		n = -n;
 	}
-	_putchar('\n');
+	a = n % 10;
 
+	if (a < 0)
+	{
+		a = -a;
+	}
+	_putchar(a + '0');
+
+	return (a);
 }
