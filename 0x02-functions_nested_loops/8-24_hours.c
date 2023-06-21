@@ -1,18 +1,25 @@
 #include "main.h"
+
 /**
- * print_alphabet -  prints a to z, followed by a new line
- * Return: Always 0 (Success)
+ * jack_bauer - prints every minute of the day of Jack Bauer
+ * starting from 00:00 to 23:59
  */
-void print_alphabet(void)
+void jack_bauer(void)
 {
-	char c = 'a';
 
-	while (c <= 'z')
+	for (int i = 0; i < 24; i++)
 	{
-		_putchar(c);
-		c++;
-
+		j = 0;
+		while (j < 60)
+		{
+			_putchar((i / 10) + '0');
+			_putchar((i % 10) + '0');
+			_putchar(':');
+			_putchar((j / 10) + '0');
+			_putchar((j % 10) + '0');
+			_putchar('\n');
+			j++;
+		}
+		i++;
 	}
-	_putchar('\n');
-
 }
