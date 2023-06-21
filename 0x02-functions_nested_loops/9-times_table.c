@@ -1,18 +1,36 @@
 #include "main.h"
+
 /**
- * print_alphabet -  prints a to z, followed by a new line
- * Return: Always 0 (Success)
+ * times_table - prints the 9 times table, starting with 0
  */
-void print_alphabet(void)
+void times_table(void)
 {
-	char c = 'a';
+	int i, j, k;
 
-	while (c <= 'z')
+	for (i = 0; i < 10; i++)
 	{
-		_putchar(c);
-		c++;
+		for (j = 0; j < 10; j++)
+		{
+			k = j * i;
+			if (j == 0)
+			{
+				_putchar(k + '0');
+			}
 
+			if (k < 10 && j != 0)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(k + '0');
+			} else if (k >= 10)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar((k / 10) + '0');
+				_putchar((k % 10) + '0');
+			}
+		}
+		_putchar('\n');
 	}
-	_putchar('\n');
-
 }
