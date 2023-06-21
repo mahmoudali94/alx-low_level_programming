@@ -1,18 +1,16 @@
 #include "main.h"
+
 /**
- * print_alphabet -  prints a to z, followed by a new line
- * Return: Always 0 (Success)
+ * add - adds two integers and returns the result
+ * @a: int to be added to b
+ * @b: int to be added to a
+ * Return: sum of a and b
  */
-void print_alphabet(void)
+int add(int a, int b)
 {
-	char c = 'a';
+	int c;
 
-	while (c <= 'z')
-	{
-		_putchar(c);
-		c++;
+	c = a + b;
 
-	}
-	_putchar('\n');
-
+	return (c);
 }
