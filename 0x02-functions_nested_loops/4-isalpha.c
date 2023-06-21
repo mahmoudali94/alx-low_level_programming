@@ -1,18 +1,11 @@
 #include "main.h"
+
 /**
- * print_alphabet -  prints a to z, followed by a new line
- * Return: Always 0 (Success)
+ * _isalpha - checks for alphabetic character
+ * @c: the character to be checked
+ * Return: 1 if c is a letter, 0 otherwise
  */
-void print_alphabet(void)
+int _isalpha(int c)
 {
-	char c = 'a';
-
-	while (c <= 'z')
-	{
-		_putchar(c);
-		c++;
-
-	}
-	_putchar('\n');
-
+	return ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'));
 }
