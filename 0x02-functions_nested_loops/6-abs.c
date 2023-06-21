@@ -1,18 +1,15 @@
 #include "main.h"
+
 /**
- * print_alphabet -  prints a to z, followed by a new line
- * Return: Always 0 (Success)
+ * _abs - computes the absolute value of an integer
+ * @n: the int to check
+ * Return: the absolute value of int
  */
-void print_alphabet(void)
+int _abs(int n)
 {
-	char c = 'a';
-
-	while (c <= 'z')
+	if (n < 0)
 	{
-		_putchar(c);
-		c++;
-
+		return (-n);
 	}
-	_putchar('\n');
-
+	return (n);
 }
