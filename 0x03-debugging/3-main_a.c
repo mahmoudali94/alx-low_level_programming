@@ -2,26 +2,26 @@
 #include "main.h"
 
 /**
-* main - takes a date and prints how many days are left in the year, taking
-* leap years into account
-* Return: 0
-*/
+ *main - takes a date and prints how many days are left in the year, taking
+ *leap years into account
+ *Return: 0
+ */
 
 int main(void)
 {
-    int day;
-    int year;
-    int month;
+	int day;
+	int year;
+	int month;
 
-    month = 4;
-    day = 01;
-    year = 1997;
-    
-    printf("Date: %02d/%02d/%04d\n", month, day, year);
+	month = 4;
+	day = 01;
+	year = 1997;
 
-    day = convert_day(month, day);
+	printf("Date: %02d/%02d/%04d\n", month, day, year);
 
-    print_remaining_days(month, day, year);
+	day = convert_day(month, day);
 
-    return (0);
+	print_remaining_days(month, day, year);
+
+	return (0);
 }
