@@ -1,1 +1,1 @@
-Nested loop task in c
+Arrys & Pointers in c
