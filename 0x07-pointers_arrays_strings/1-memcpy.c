@@ -1,6 +1,6 @@
 #include "main.h"
 /*
- * _memcpy - function that copies memory area
+ * _memcpy - function that fills memory with a constant byte
  *@dest: the address of memory to print
  *@src: second value
  *@n: thirth value
