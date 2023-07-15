@@ -1,0 +1,1 @@
+memmory dynamic allocation
