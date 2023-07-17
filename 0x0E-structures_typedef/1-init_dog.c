@@ -1,24 +1,24 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "dog.h"
 
 /**
- * init_dog - Initializes the dog struct variables
- *
- * @name: String literal
- *
- * @d: Pointer to struct dog
- *
- * @age: Age of the dog
- *
- * @owner: Owner of the dog
+ * init_dog - dog structure
+ * @d: the struct
+ * @name: dog's name
+ * @age: dog's age
+ * @owner: the owner of dog
  */
+
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	if (d)
-	{
-		d->name = name;
-		(*d).age = age;
-		d->owner = owner;
-	}
+  if (d == NULL)
+    ;
+  else
+    {
+      d->name = name;
+      d->age = age;
+      d->owner = owner;
+    }
 }
